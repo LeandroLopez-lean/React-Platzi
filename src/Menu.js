@@ -7,9 +7,9 @@ function Menu(){
             <ul>
                 <li>
                     <NavLink
-                        style={({ isActive }) => ({
+                         style={({ isActive }) => ({
                             color: isActive ? 'red' : 'blue',
-                    })}
+                    })} 
                     to="/">
                         Home</NavLink>
                 </li>
@@ -24,6 +24,19 @@ function Menu(){
     );
 }
 
+const routes = [];
+routes.push({
+    to: '/',
+    Text: 'Home',
+});
+routes.push({
+    to: '/blog',
+    Text: 'Blog',
+});
+routes.push({
+    to: '/profile',
+    Text: 'Profile',
+});
 
 export { Menu };
 
