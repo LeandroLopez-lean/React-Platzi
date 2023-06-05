@@ -5,7 +5,20 @@ function Menu(){
     return(
         <nav>
             <ul>
-                <li>
+            {routes.map(route => (
+                 <li>
+                   <NavLink 
+                   /// el style queda comentado por que rompe el codigo/////////
+                       /*  style={({ isActive }) => ({
+                            color: isActive ? 'red' : 'blue',
+                    })}  */
+                     to={route.to}
+                   >
+                     {route.Text}
+                   </NavLink>
+                   </li>
+                ))}
+               {/*  <li>
                     <NavLink
                          style={({ isActive }) => ({
                             color: isActive ? 'red' : 'blue',
@@ -18,7 +31,7 @@ function Menu(){
                 </li>
                 <li>
                     <NavLink to="/profile">Profile</NavLink>
-                </li>
+                </li> */}
             </ul>
         </nav>
     );
