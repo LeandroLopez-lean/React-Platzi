@@ -7,22 +7,23 @@ function Menu(){
             <ul>
             {routes.map(route => (
                  <li>
-                   <NavLink 
-                   /// el style queda comentado por que rompe el codigo/////////
-                       /*  style={({ isActive }) => ({
-                            color: isActive ? 'red' : 'blue',
-                    })}  */
+                   <NavLink    
+                     /* style={({ isActive }) => ({
+                        color: isActive ? 'red' : 'blue',
+                    })}  */               
                      to={route.to}
                    >
                      {route.Text}
                    </NavLink>
                    </li>
                 ))}
+
                {/*  <li>
-                    <NavLink
-                         style={({ isActive }) => ({
-                            color: isActive ? 'red' : 'blue',
-                    })} 
+                    <NavLink 
+                    
+                    /// el style queda comentado por que rompe el codigo/////////
+                    
+                       
                     to="/">
                         Home</NavLink>
                 </li>

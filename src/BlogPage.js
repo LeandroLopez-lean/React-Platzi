@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as NavLink} from "react-router-dom";
 
 function BlogPage(){
     return(
@@ -43,4 +43,4 @@ function BlogPage(){
     author: 'Lean Lopez'
  })
 
-export { BlogPage };
+export { BlogPage, BlogLink};
